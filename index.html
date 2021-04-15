@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Laboratorio 1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form action="http://127.0.0.1:8888/v1/messages" method="POST" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Laboratorio 1
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="El email es obligatorio">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Ingrese un email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="El título es obligatorio">
+					<span class="label-input100">Título</span>
+					<input class="input100" type="text" name="title" placeholder="Ingrese el título">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate ="La descripción es obligatoria">
+					<span class="label-input100">Descripción</span>
+					<textarea class="input100" name="description" placeholder="Ingrese la descripción..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" id="send">
+							<span>
+								Enviar
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="response"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+<!--===============================================================================================-->
+
+</body>
+</html>
